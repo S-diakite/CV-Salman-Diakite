@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ECF1FD;
+    padding: 50px 200px;
+}
+
+.container {
+    padding: 50px 50px 50px 70px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px #001f4e;
+}
+
+.img-profil {
+    width: 200px;
+    height: 200px;
+    box-shadow: 3px 3px #79AFFF, -1em 0 0.4em #002a68;
+    border-radius: 70px 50px;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.dev-web {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro {
+    font-size: 25px;
+    line-height: 45px;
+    margin-bottom: 70px;
+}
+
+.fa-solid, .dev-web, h3  {
+    color: #79AFFF;
+}
+
+.contact-info span {
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.icon {
+    box-shadow: -10px 0 5px rgba(0,0,0,0.2);
+}
+
+.date {
+    color: #757575;
+    font-weight: lighter;
+}
+
+.formation {
+    margin: 100px 0 150px;
+}
+
+p {
+    text-decoration: none;
+}
+
+.formation p,
+.competences p {
+    border-left: 4px solid #79AFFF;
+    padding-left: 10px;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+.interests-languages {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio-preview {
+background-color: #73abff;
+    position: sticky;
+    bottom: 30px;          /* reste en bas de l’écran */
+    margin-left: auto;    /* le pousse à droite */
+    width: 300px;
+    color: #002e72;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.portfolio-preview h1 {
+    border-bottom: 5px solid #001f4e;
+    padding-bottom: 20px;
+}
+
+.portfolio-preview a {
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+    gap: 5px;
+    color: #fff;
+    width: fit-content;
+    transition: all 300ms;
+}
+
+.portfolio-preview a:hover {
+    gap: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        padding: 40px 60px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .dev-web {
+        font-size: 24px;
+    }
+
+    .intro {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .img-profil {
+        width: 160px;
+        height: 160px;
+    }
+
+    .portfolio-preview {
+        width: 260px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    /* Header en colonne */
+    .header-profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .dev-web {
+        font-size: 20px;
+    }
+
+    .contact-info {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img-profil {
+        width: 140px;
+        height: 140px;
+    }
+
+    .intro {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        margin-top: 30px;
+    }
+
+    /* Portfolio en bas, full width */
+    .portfolio-preview {
+        position: static;
+        width: 100%;
+        margin-top: 40px;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    .interests-languages {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ===== Version imprimable ===== */
+@media print {
+    /* Body + container */
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 12pt;
+    }
+
+    .container {
+        box-shadow: none !important;
+        padding: 20px !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+
+    /* Images */
+    .img-profil {
+        width: 120px !important;
+        height: 120px !important;
+        border-radius: 50% !important;
+        box-shadow: none !important;
+    }
+
+    /* Headers et textes */
+    h1, h2, h3 {
+        color: #000 !important;
+    }
+
+    .intro, p {
+        color: #000 !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Icones font-awesome */
+    i {
+        display: none !important;
+    }
+
+    /* Layout simplifié */
+    .header-profile {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .contact-info {
+        flex-direction: column !important;
+        gap: 5px !important;
+    }
+
+    .interests-languages {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    /* Portfolio-preview */
+    .portfolio-preview {
+        display: none !important; /* on ne veut pas le bouton bleu dans l'impression */
+    }
+
+    /* Pas de nav fixe */
+    nav, .portfolio-preview {
+        display: none !important;
+    }
+
+    /* Ajuste les marges */
+    .formation, .competences {
+        margin: 20px 0 !important;
+    }
+}
+
