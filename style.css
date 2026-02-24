@@ -236,73 +236,46 @@ background-color: #73abff;
 @media print {
     /* Body + container */
     body {
-        background: #fff !important;
-        color: #000 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        font-size: 12pt;
+        padding: 0;
     }
 
-    .container {
-        box-shadow: none !important;
-        padding: 20px !important;
-        width: 100% !important;
-        border-radius: 0 !important;
+    h1 {
+        font-size: 35px;
     }
 
-    /* Images */
+    h2 {
+        font-size: 23px;
+    }
+
     .img-profil {
-        width: 120px !important;
-        height: 120px !important;
-        border-radius: 50% !important;
-        box-shadow: none !important;
+        width: 150px;
+        height: 150px;
+        border-radius: 60px 40px;
     }
 
-    /* Headers et textes */
-    h1, h2, h3 {
-        color: #000 !important;
+    .intro {
+        font-size: 18px;
+        line-height: 40px;
+        margin-bottom: 40px;
     }
 
-    .intro, p {
-        color: #000 !important;
-        line-height: 1.4 !important;
+    .formation {
+        margin: 0;
     }
 
-    /* Icones font-awesome */
-    i {
-        display: none !important;
+    .formation-competence {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
     }
 
-    /* Layout simplifié */
-    .header-profile {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        text-align: left !important;
-    }
-
-    .contact-info {
-        flex-direction: column !important;
-        gap: 5px !important;
-    }
-
-    .interests-languages {
-        flex-direction: column !important;
-        gap: 10px !important;
-    }
-
-    /* Portfolio-preview */
     .portfolio-preview {
-        display: none !important; /* on ne veut pas le bouton bleu dans l'impression */
+        display: none;
     }
 
-    /* Pas de nav fixe */
-    nav, .portfolio-preview {
-        display: none !important;
-    }
-
-    /* Ajuste les marges */
-    .formation, .competences {
-        margin: 20px 0 !important;
+    h3 {
+        margin: 0;
+        font-size: 17px;
     }
 }
 
