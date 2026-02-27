@@ -36,8 +36,12 @@ h1 {
 }
 
 .dev-web {
+    margin-top: 10px;
     font-size: 30px;
     font-weight: lighter;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .contact-info {
@@ -111,6 +115,7 @@ background-color: #73abff;
     color: #002e72;
     padding: 20px;
     border-radius: 50px;
+    box-shadow: 15px 15px 15px #001f4e;
 }
 
 .portfolio-preview h1 {
@@ -251,6 +256,8 @@ background-color: #73abff;
         width: 150px;
         height: 150px;
         border-radius: 60px 40px;
+        box-shadow: none;
+        border: 2px solid #73abff
     }
 
     .intro {
@@ -267,6 +274,7 @@ background-color: #73abff;
         display: flex;
         align-items: start;
         justify-content: space-between;
+        gap: 15px;
     }
 
     .portfolio-preview {
@@ -275,7 +283,11 @@ background-color: #73abff;
 
     h3 {
         margin: 0;
-        font-size: 17px;
+        font-size: 14px;
+    }
+
+    .container {
+        box-shadow: none;
     }
 }
 
