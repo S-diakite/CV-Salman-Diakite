@@ -98,7 +98,7 @@ h3 {
 
 .interests-languages {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
 }
 
@@ -135,6 +135,10 @@ background-color: #73abff;
 
 .portfolio-preview a:hover {
     gap: 15px;
+}
+
+footer {
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -288,6 +292,10 @@ background-color: #73abff;
 
     .container {
         box-shadow: none;
+    }
+
+    footer {
+        display: block;
     }
 }
 
